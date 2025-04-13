@@ -1,103 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>자기소개서</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 2.5em;
-      font-weight: bold;
-    }
-
-    .profile {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-      background-color: white;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .profile img {
-      max-width: 200px;
-      border-radius: 10px;
-      margin-right: 40px;
-    }
-
-    .profile-text {
-      max-width: 600px;
-    }
-
-    .section {
-      padding: 40px 20px;
-    }
-
-    .section h2 {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    .project-card {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    .accordion {
-      background-color: white;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 16px;
-      transition: background-color 0.3s;
-      margin-bottom: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .accordion:hover {
-      background-color: #ddd;
-    }
-
-    .panel {
-      padding: 0 18px;
-      display: none;
-      background-color: #f9f9f9;
-      overflow: hidden;
-      margin-bottom: 10px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>권영빈 자기소개서</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    홍길동
+    권영빈
   </header>
 
   <section class="profile">
-    <img src="https://via.placeholder.com/200" alt="프로필 사진">
+    <img src="https://via.placeholder.com/200" alt="프로필 사진" />
     <div class="profile-text">
-      <h2>자기소개</h2>
-      <p>안녕하세요! 저는 웹 개발에 열정을 가진 개발자 홍길동입니다. 사용자 중심의 UI/UX와 깔끔한 코드 작성을 좋아하며, 팀 협업에 능합니다.</p>
+      <p>
+        안녕하세요! 저는 웹 개발에 열정을 가진 개발자 홍길동입니다.
+        사용자 중심의 UI/UX와 깔끔한 코드 작성을 좋아하며, 팀 협업에 능합니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>기술 역량</h2>
+    <div class="skill-tags">
+      <span>Jira</span>
+      <span>Confluence</span>
+      <span>Slack</span>
+      <span>Talend</span>
+      <span>Figma</span>
+      <span>PowerPoint</span>
+      <span>Google Spreadsheets</span>
+      <span>Asana</span>
+      <span>Notion</span>
+      <span>iOS</span>
+      <span>Android</span>
+      <span>macOS</span>
+      <span>TOPAS Sellconnect</span>
+      <span>Abacus</span>
     </div>
   </section>
 
@@ -105,32 +46,42 @@
     <h2>현재 진행 중인 프로젝트</h2>
     <div class="project-card">
       <h3>📱 모바일 쇼핑앱 개발</h3>
-      <p>React Native 기반으로 사용성과 접근성을 개선한 쇼핑 앱 개발 중입니다.</p>
+      <p>
+        React Native 기반으로 사용성과 접근성을 개선한 쇼핑 앱 개발 중입니다.
+      </p>
     </div>
   </section>
 
   <section class="section">
     <h2>이전 프로젝트</h2>
+
     <button class="accordion">🏠 부동산 정보 제공 웹사이트</button>
     <div class="panel">
-      <p>부동산 정보 크롤링, 지도 API 연동, 사용자 관심지역 저장 기능 등을 포함한 웹사이트를 개발했습니다.</p>
+      <p>
+        부동산 정보 크롤링, 지도 API 연동, 사용자 관심지역 저장 기능 등을 포함한 웹사이트를 개발했습니다.
+      </p>
     </div>
 
     <button class="accordion">📊 데이터 시각화 대시보드</button>
     <div class="panel">
-      <p>D3.js와 Chart.js를 사용하여 실시간 데이터 시각화를 구현했습니다. 사용자별 필터 및 공유 기능 추가.</p>
+      <p>
+        D3.js와 Chart.js를 사용하여 실시간 데이터 시각화를 구현했습니다.
+        사용자별 필터 및 공유 기능 추가.
+      </p>
     </div>
 
     <button class="accordion">📝 블로그 플랫폼 클론코딩</button>
     <div class="panel">
-      <p>Next.js, MongoDB를 활용한 풀스택 블로그 시스템. 댓글, 마크다운 에디터, 사용자 인증 포함.</p>
+      <p>
+        Next.js, MongoDB를 활용한 풀스택 블로그 시스템. 댓글, 마크다운 에디터, 사용자 인증 포함.
+      </p>
     </div>
   </section>
 
   <script>
     const accordions = document.querySelectorAll(".accordion");
     accordions.forEach((btn) => {
-      btn.addEventListener("click", function() {
+      btn.addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = this.nextElementSibling;
         panel.style.display = panel.style.display === "block" ? "none" : "block";
